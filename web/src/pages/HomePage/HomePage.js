@@ -3,12 +3,16 @@ import { Link } from '@redwoodjs/router'
 const HomePage = () => {
   return (
     <>
-      <h1>HomePage</h1>
-      <p>Find me in "./web/src/pages/HomePage/HomePage.js"</p>
-      <p>
-        My default route is named "home", link to me with `
-        <Link to="home">routes.home()</Link>`
-      </p>
+      <div className="banner">
+        <h1>Build new habits and celebrate the fails</h1>
+        <p>Microfails is the leading destination to find and create new habit building opportunities</p>
+        <button>
+          <Link to={routes.signup()}>
+            Sign up
+          </Link>
+        </button>
+        <img src="#" />
+      </div>
     </>
   )
 }
