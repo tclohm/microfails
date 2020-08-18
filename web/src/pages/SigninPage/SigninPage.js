@@ -1,18 +1,15 @@
-import { Link } from '@redwoodjs/router'
+import { Link, routes } from '@redwoodjs/router'
+import AuthenticationLayout from 'src/layouts/AuthenticationLayout'
 
 const SigninPage = () => {
   return (
-    <>
-      <p>Not a member?</p><a href="#">Sign up now</a>
-      <div className="leftside">
-        <a href="#">Microfails</p>
-        <p>Discover the new opportunities to hopefully better yourself</p>
-      </div>
+    <AuthenticationLayout>
+      <p>Not a member?</p><Link to={routes.signup()}>Sign up now</Link>
       <div className="rightside">
         <h3>Sign in to Microfails</h3>
-        <button>Create Account</button>
+        <button>Sign In</button>
       </div>
-    </>
+    </AuthenticationLayout>
   )
 }
 
