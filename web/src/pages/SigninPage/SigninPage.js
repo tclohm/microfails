@@ -4,10 +4,16 @@ import AuthenticationLayout from 'src/layouts/AuthenticationLayout'
 const SigninPage = () => {
   return (
     <AuthenticationLayout>
-      <p>Not a member?</p><Link to={routes.signup()}>Sign up now</Link>
-      <div className="rightside">
-        <h3>Sign in to Microfails</h3>
-        <button>Sign In</button>
+      <div>
+        <div>
+          <p>Not a member? <Link to={routes.signup()}>Sign up now</Link></p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h3>Sign in to Microfails</h3>
+          <button>Sign In</button>
+        </div>
       </div>
     </AuthenticationLayout>
   )
