@@ -2,3 +2,87 @@ body {
 	margin: 0;
 	font-family: 'SF Compact Rounded';
 }
+
+hr::after {
+    content: 'or';
+    display: inline-block;
+    position: relative;
+    top: -0.7rem;
+    padding: 0 1.6rem;
+    background: #fff;
+}
+
+label {
+	font-weight: Bold; 
+    margin: 1rem 0 0 0;
+}
+
+.logo {
+	font-family: 'Gilbert color';
+	font-size: 5rem;
+	text-decoration: none;
+}
+
+.auth {
+	text-decoration: none;
+}
+
+.form {
+	border-radius: 0.3rem; 
+    border: 1px solid lightgray;
+    height: 2.3rem;
+    background: lightgray;
+    padding: 0 0 0 1rem;
+}
+
+.form:hover {
+	background: white;
+    animation: focus 0.1s forwards;
+    animation: hoverBoxShadow 0.3s forwards;
+}
+
+.form:focus {
+    background: white;
+    animation: focusBoxShadow 0.10s ease-in-out forwards;
+}
+
+@keyframes focus {
+    0% {
+        background: lightgray;
+    }
+
+    100% {
+        background: white;
+    }
+}
+
+@keyframes hoverBoxShadow {
+    0% {
+        box-shadow: 0rem;
+    }
+
+    100% {
+        box-shadow: inset 0.2rem 0.2rem lightgray,
+                inset 0.2rem 0.2rem lightgray,
+                inset -0.2rem -0.2rem lightgray,
+                inset -0.2rem -0.2rem lightgray;
+    }
+}
+
+@keyframes focusBoxShadow {
+    0% {
+        box-shadow: inset 0.3rem 0.3rem lightgray,
+                inset 0.3rem 0.3rem lightgray,
+                inset -0.3rem -0.3rem lightgray,
+                inset -0.3rem -0.3rem lightgray;
+    }
+
+    100% {
+        box-shadow: inset 0.1rem 0.1rem lightgray,
+                inset 0.1rem 0.1rem lightgray,
+                inset -0.1rem -0.1rem lightgray,
+                inset -0.1rem -0.1rem lightgray;;
+    }
+
+    
+}
