@@ -22,19 +22,10 @@ const ContentLayout = ({ children }) => {
   		<Header>
   			<h3 style={{ margin: '1rem 0 1rem 2rem', fontFamily: 'Gilbert' }}>microfails</h3>
   			<Nav>
-          <Link to={routes.signin()} className='auth'>
-    				<Button
-              inputHeight='2.5rem'
-              inputWidth='5rem'
-              inputColor='gray'
-    					inputBGColor='transparent'
-    					inputBorder='transparent'
-    					inputHoverColor='transparent'
-    				>
-  				    Sign in
-  				  </Button>
+          <Link to={routes.signin()} className='auth' style={{ color: 'gray', margin: '0 0 0 3rem' }}>
+    				Sign in
   				</Link>
-  				<Link to={routes.signup()} className="auth">
+  				<Link to={routes.signup()} className="auth" style={{ width: '0rem', height: '2.5rem', margin: '0 7rem 0 0'}}>
             <Button
             inputHeight='2.5rem'
             inputWidth='5rem'

@@ -10,9 +10,9 @@ const HomePage = () => {
     <ContentLayout>
       <div className='banner'>
         <div className='banner-left'>
-          <h1>Celebrate the fails with others.</h1>
-          <p>Microfails is the leading destination try new things and fail with bravado</p>
-          <Link to={routes.signup()} className="auth" >
+          <h1 style={{ margin: '0 0 0 0', fontSize: '3rem' }}>Celebrate the fails with others.</h1>
+          <p style={{ fontSize: '1.2rem' }}>Microfails is the leading destination to try new things and fail with bravado</p>
+          <Link to={routes.signup()} className="auth" style={{ width: '5rem', height: '2.5rem' }}>
             <Button
               inputMargin='0'
               inputHeight='2.5rem'
