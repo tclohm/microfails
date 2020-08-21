@@ -100,8 +100,11 @@ label {
 }
 
 .banner-left {
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: left;
     font-family: 'SF Pro Display';
+    margin: 0 0 0 3rem;
 }
