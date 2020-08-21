@@ -91,8 +91,15 @@ label {
 
 /* Homepage */
 .banner {
-    background: red;
-    height: 80vh;
+    background: rgb(244, 238, 210);
+    height: 37rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
