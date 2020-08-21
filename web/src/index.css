@@ -3,6 +3,8 @@ body {
 	font-family: 'SF Compact Rounded';
 }
 
+/* MARK: -- Sign In / Sign Up */
+
 hr::after {
     content: 'or';
     display: inline-block;
@@ -85,4 +87,14 @@ label {
     }
 
     
+}
+
+/* Homepage */
+.banner {
+    background: red;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'SF Pro Display';
 }
