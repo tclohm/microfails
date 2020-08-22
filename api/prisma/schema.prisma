@@ -37,7 +37,7 @@ model Post {
 model Tag {
   id   Int    @id @default(autoincrement())
   name String
-  Post Post[] @relation(references: [id])
+  post Post[] @relation(references: [id])
 }
 
 model RW_DataMigration {
