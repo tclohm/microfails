@@ -1,10 +1,10 @@
 export const schema = gql`
 	type User {
-		id              Int!
-		profile         Profile?
-		email           String!
-		hashedPassword  String?
-		post            [post]!
+		id: Int!
+		profile: Profile?
+		email: String!
+		hashedPassword: String?
+		post: [Post]!
 	}
 
 	type Query {
