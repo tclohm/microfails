@@ -1,9 +1,9 @@
 export const schema = gql`
 	type User {
 		id: Int!
-		profile: Profile?
+		profile: Profile
 		email: String!
-		hashedPassword: String?
+		hashedPassword: String
 		post: [Post]!
 	}
 
@@ -14,12 +14,12 @@ export const schema = gql`
 
 	input CreateUserInput {
 		email: String!
-		hashedPassword: String?
+		hashedPassword: String
 	}
 
 	input UpdateUserInput {
 		email: String!
-		hashedPassword: String?
+		hashedPassword: String
 	}
 
 	type Mutation {
