@@ -1,8 +1,8 @@
 /*
-import { users } from './users'
+import { posts } from './posts'
 */
 
-describe('users', () => {
+describe('posts', () => {
   it('returns true', () => {
     expect(true).toBe(true)
   })
