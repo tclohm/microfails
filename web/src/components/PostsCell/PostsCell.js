@@ -8,8 +8,11 @@ export const QUERY = gql`
       id
       title
       description
+      imageURL
       createdAt
-      userId
+      updatedAt
+      effort
+      result
     }
   }
 `
@@ -22,6 +25,7 @@ export const Empty = () => {
       {'No posts yet. '}
       <Link to={routes.newPost()} className="rw-link">
         {'Create one?'}
+        
       </Link>
     </div>
   )

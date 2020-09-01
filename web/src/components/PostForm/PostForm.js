@@ -4,7 +4,6 @@ import {
   FieldError,
   Label,
   TextField,
-  NumberField,
   Submit,
 } from '@redwoodjs/forms'
 
@@ -56,20 +55,52 @@ const PostForm = (props) => {
         <FieldError name="description" className="rw-field-error" />
 
         <Label
-          name="userId"
+          name="imageURL"
           className="rw-label"
           errorClassName="rw-label rw-label-error"
         >
-          User id
+          Image url
         </Label>
-        <NumberField
-          name="userId"
-          defaultValue={props.post?.userId}
+        <TextField
+          name="imageURL"
+          defaultValue={props.post?.imageURL}
           className="rw-input"
           errorClassName="rw-input rw-input-error"
           validation={{ required: true }}
         />
-        <FieldError name="userId" className="rw-field-error" />
+        <FieldError name="imageURL" className="rw-field-error" />
+
+        <Label
+          name="effort"
+          className="rw-label"
+          errorClassName="rw-label rw-label-error"
+        >
+          Effort
+        </Label>
+        <TextField
+          name="effort"
+          defaultValue={props.post?.effort}
+          className="rw-input"
+          errorClassName="rw-input rw-input-error"
+          validation={{ required: true }}
+        />
+        <FieldError name="effort" className="rw-field-error" />
+
+        <Label
+          name="result"
+          className="rw-label"
+          errorClassName="rw-label rw-label-error"
+        >
+          Result
+        </Label>
+        <TextField
+          name="result"
+          defaultValue={props.post?.result}
+          className="rw-input"
+          errorClassName="rw-input rw-input-error"
+          validation={{ required: true }}
+        />
+        <FieldError name="result" className="rw-field-error" />
 
         <div className="rw-button-group">
           <Submit disabled={props.loading} className="rw-button rw-button-blue">

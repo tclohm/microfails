@@ -5,7 +5,15 @@ generator client {
 
 datasource DS {
   provider = "sqlite"
-  url      = env("DATABASE_URL")
+  url = "***"
+}
+
+model User {
+  id              Int      @default(autoincrement()) @id
+  email           String   @unique
+  username        String   @unique
+  password        String?
+  post            Post[]
 }
 
 model Post {

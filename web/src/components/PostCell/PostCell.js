@@ -6,8 +6,11 @@ export const QUERY = gql`
       id
       title
       description
+      imageURL
       createdAt
-      userId
+      updatedAt
+      effort
+      result
     }
   }
 `

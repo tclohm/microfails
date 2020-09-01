@@ -57,8 +57,11 @@ const PostsList = ({ posts }) => {
             <th>Id</th>
             <th>Title</th>
             <th>Description</th>
+            <th>Image url</th>
             <th>Created at</th>
-            <th>User id</th>
+            <th>Updated at</th>
+            <th>Effort</th>
+            <th>Result</th>
             <th>&nbsp;</th>
           </tr>
         </thead>
@@ -68,8 +71,11 @@ const PostsList = ({ posts }) => {
               <td>{truncate(post.id)}</td>
               <td>{truncate(post.title)}</td>
               <td>{truncate(post.description)}</td>
+              <td>{truncate(post.imageURL)}</td>
               <td>{timeTag(post.createdAt)}</td>
-              <td>{truncate(post.userId)}</td>
+              <td>{timeTag(post.updatedAt)}</td>
+              <td>{truncate(post.effort)}</td>
+              <td>{truncate(post.result)}</td>
               <td>
                 <nav className="rw-table-actions">
                   <Link

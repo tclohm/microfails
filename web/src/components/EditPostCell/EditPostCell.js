@@ -8,8 +8,11 @@ export const QUERY = gql`
       id
       title
       description
+      imageURL
       createdAt
-      userId
+      updatedAt
+      effort
+      result
     }
   }
 `
@@ -33,8 +36,7 @@ export const Success = ({ post }) => {
   })
 
   const onSave = (input, id) => {
-    const castInput = Object.assign(input, { userId: parseInt(input.userId) })
-    updatePost({ variables: { id, input: castInput } })
+    updatePost({ variables: { id, input } })
   }
 
   return (

@@ -67,12 +67,24 @@ const Post = ({ post }) => {
               <td>{post.description}</td>
             </tr>
             <tr>
+              <th>Image url</th>
+              <td>{post.imageURL}</td>
+            </tr>
+            <tr>
               <th>Created at</th>
               <td>{timeTag(post.createdAt)}</td>
             </tr>
             <tr>
-              <th>User id</th>
-              <td>{post.userId}</td>
+              <th>Updated at</th>
+              <td>{timeTag(post.updatedAt)}</td>
+            </tr>
+            <tr>
+              <th>Effort</th>
+              <td>{post.effort}</td>
+            </tr>
+            <tr>
+              <th>Result</th>
+              <td>{post.result}</td>
             </tr>
           </tbody>
         </table>

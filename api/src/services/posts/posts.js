@@ -28,8 +28,3 @@ export const deletePost = ({ id }) => {
     where: { id },
   })
 }
-
-export const Post = {
-  user: (_obj, { root }) => db.post.findOne({ where: { id: root.id } }).user(),
-  tag: (_obj, { root }) => db.post.findOne({ where: { id: root.id } }).tag(),
-}
