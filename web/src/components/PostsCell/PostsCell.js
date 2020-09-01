@@ -25,6 +25,7 @@ export const Empty = () => {
       {'No posts yet. '}
       <Link to={routes.newPost()} className="rw-link">
         {'Create one?'}
+        
       </Link>
     </div>
   )
